@@ -7,20 +7,20 @@
 using namespace std;
 
 int main() {
-	// русская локализация
+	// СЂСѓСЃСЃРєР°СЏ Р»РѕРєР°Р»РёР·Р°С†РёСЏ
 
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	setlocale(LC_ALL, "ru_Ru");
 
-    // Создание объектов пользователей
+    // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚РѕРІ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
     User user1("John Doe", "johndoe", "password1");
     User user2("Jane Smith", "janesmith", "password2");
 
-    // Создание объекта сообщения
+    // РЎРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р° СЃРѕРѕР±С‰РµРЅРёСЏ
     Message message("Hello, Jane! How are you?", "johndoe", "janesmith");
 
-    // Вывод информации о пользователях и сообщении
+    // Р’С‹РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё Рѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏС… Рё СЃРѕРѕР±С‰РµРЅРёРё
     std::cout << "User 1:" << std::endl;
     std::cout << user1 << std::endl;
 
@@ -30,7 +30,7 @@ int main() {
     std::cout << "Message:" << std::endl;
     std::cout << message << std::endl;
 
-    // Запись данных пользователей и сообщения в файл
+    // Р—Р°РїРёСЃСЊ РґР°РЅРЅС‹С… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ Рё СЃРѕРѕР±С‰РµРЅРёСЏ РІ С„Р°Р№Р»
     std::ofstream outFile("data.txt");
     if (outFile.is_open()) {
         outFile << user1 << std::endl;
@@ -44,7 +44,7 @@ int main() {
         return 1;
     }
 
-    // Чтение данных из файла
+    // Р§С‚РµРЅРёРµ РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р°
     std::ifstream inFile("data.txt");
     if (inFile.is_open()) {
         User user3;
