@@ -1,0 +1,12 @@
+Name: John Doe
+Login: johndoe
+Password: password1
+
+Name: Jane Smith
+Login: janesmith
+Password: password2
+
+Text: Hello, Jane! How are you?
+Sender: johndoe
+Receiver: janesmith
+
